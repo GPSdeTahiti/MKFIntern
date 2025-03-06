@@ -1,0 +1,215 @@
+/* Reset des marges et du padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur et hauteur */
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Permet de forcer le pied de page à être en bas */
+}
+
+/* En-tête avec ombre */
+header {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center;
+    padding: 20px 40px 15px; /* Ajustement du padding du bas */
+    background-color: #356854; /* Couleur de fond spécifiée */
+    box-shadow: 0px 5px 15px rgba(32, 33, 36, 0.3); /* Ombre en bas */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+.logo {
+    width: 50px; /* Agrandir le logo pour le rendre plus visible */
+    height: 50px;
+    background-image: url('https://franksalt.com.mt/wp-content/uploads/2021/10/fs-symbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; /* Espacement des boutons amélioré */
+}
+
+.btn-hamburger {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btn-hamburger g {
+    width: 100%;
+    height: 100%;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espacement entre les sections */
+    padding: 0 20px; /* Retirer le padding à gauche et à droite */
+    width: 100vw; /* Largeur de la fenêtre */
+    overflow-x: hidden; /* Eviter le débordement horizontal */
+    max-width: 100%; /* Garantit que la largeur ne dépasse jamais 100% de la fenêtre */
+}
+
+/* Section Dernier Ajout et Dernière Vente sur la même ligne */
+.main-content {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux sections de se réorganiser */
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Prend toute la largeur */
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+/* Section Dernier Ajout */
+.section {
+    flex: 1;
+    padding: 20px;
+    min-width: 280px; /* Evite que les sections deviennent trop petites */
+}
+
+/* Dernier Ajout */
+.section h2 {
+    text-align: left; /* Aligner à gauche */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Div qui contient les tableaux */
+.table-container {
+    background-color: #f6f8f9; /* BG du div contenant le tableau */
+    border-radius: 25px; /* Bords arrondis */
+    padding: 20px; /* Augmentation du padding autour du div */
+    box-shadow: 0px 5px 10px rgba(214, 217, 218, 0.45); /* Shadow autour du div à 45% d'opacité */
+    margin: 0 auto; /* Centrer le div */
+    width: 100%; /* Occupe toute la largeur */
+    overflow-x: auto; /* Permet un défilement horizontal si nécessaire */
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 25px; /* Arrondissement des coins du tableau */
+    overflow: hidden; /* Assure que le tableau respecte les bords arrondis */
+}
+
+table th, table td {
+    padding: 0.75rem; /* Augmenter le padding pour plus d'espace */
+    text-align: center; /* Centrer le contenu de chaque cellule */
+}
+
+table th {
+    background-color: #c3c5c6; /* Couleur de fond de l'entête */
+}
+
+/* Lignes alternées */
+tbody tr:nth-child(even) {
+    background-color: #eaeff1; /* Deuxième couleur pour lignes alternées (la plus claire) */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f6f8f9; /* Première couleur pour lignes alternées (la plus claire) */
+}
+
+/* Publications Planning */
+.week-planner {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 colonnes égales pour les jours de la semaine */
+    gap: 15px; /* Espacement entre les colonnes */
+    background-color: #f6f8f9; /* BG de base du planning */
+    box-shadow: 0px 5px 10px rgba(214, 217, 218, 0.45); /* Shadow autour du tableau */
+    padding: 0.75rem; /* Padding du tableau augmenté */
+    border-radius: 25px; /* Bords arrondis */
+}
+
+.week-planner .day {
+    text-align: center;
+    background-color: #c3c5c6; /* Couleur de l'entête */
+    padding: 10px 0; /* Padding uniforme pour chaque jour */
+}
+
+.week-planner .reference {
+    text-align: center;
+    background-color: transparent; /* Pas de fond */
+    padding: 10px 0; /* Padding uniforme */
+}
+
+/* Flèches de navigation alignées sur la même ligne */
+.title-container {
+    display: flex;
+    justify-content: space-between; /* Espacement entre le titre et les flèches */
+    align-items: center;
+    width: 100%; /* Prendre toute la largeur disponible */
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-end; /* Aligne les flèches à droite */
+    align-items: center;
+}
+
+.arrow span {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+/* Actions rapides */
+.action-buttons {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les boutons */
+    gap: 20px; /* Espacement entre les boutons */
+    padding: 20px 20px; /* Padding en haut et en bas de 20px, et à gauche/droite comme la page */
+    margin-bottom: 30px; /* Espacement avant les sections */
+    width: 100%; /* Les boutons prennent toute la largeur disponible */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+.action-buttons button {
+    background-color: #356854;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    flex-grow: 1; /* Permet au bouton de grandir pour occuper l'espace disponible */
+    flex-basis: 0; /* Assure qu'ils ont tous la même taille de base */
+    min-width: 100px; /* Définir une largeur minimale pour éviter qu'ils ne deviennent trop petits */
+}
+
+.action-buttons button:hover {
+    background-color: #4a8f75;
+}
+
+/* Pied de page */
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Force le pied de page en bas */
+}
+
+footer hr {
+    border: 1px solid #d6d9da;
+    margin: 20px 0;
+}
+
+footer p {
+    color: #d6d9da; /* Couleur éclaircie du texte */
+    font-size: 14px;
+}
