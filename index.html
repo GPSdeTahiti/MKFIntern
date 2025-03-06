@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Salt Intern Board</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet"> <!-- Police Nunito -->
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+
+<!-- En-tête avec logo et bouton de navigation -->
+<header>
+    <div class="header-content">
+        <div class="logo"></div>
+        <h1 style="color: white; font-size: 24px; font-weight: bold;">Frank Salt Intern Board</h1>
+        <div class="buttons">
+            <div class="btn-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" fill-rule="evenodd" width="35" height="35">
+                    <path d="M9.167 0H25v2H9.167zM0 9h25v2H0zM5 18h20v2H5z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Conteneur principal -->
+<div class="container">
+
+    <!-- Ligne des actions rapides -->
+    <div class="action-buttons" style="
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    ">
+        <button onclick="redirectToPage('page2.html')">SM Planner</button>
+        <button onclick="redirectToPage('page3.html')">Aller à la Page 2</button>
+        <button onclick="redirectToPage('page4.html')">Aller à la Page 3</button>
+        <button onclick="redirectToPage('page5.html')">Aller à la Page 4</button>
+        <button onclick="redirectToPage('page6.html')">Aller à la Page 5</button>
+    </div>
+
+    <!-- Dernier Ajout et Dernière Vente sur la même ligne -->
+    <div class="main-content">
+        <div class="section">
+            <h2>Dernier Ajout</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ref</th>
+                            <th>Sole agency</th>
+                            <th>Type</th>
+                            <th>Localisation</th>
+                            <th>Prix</th>
+                            <th>Vente / Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>001</td><td>Sole Agency 7</td><td>Type 7</td><td>Loc 7</td><td>7000</td><td>Vente</td></tr>
+                        <tr><td>002</td><td>Sole Agency 8</td><td>Type 8</td><td>Loc 8</td><td>8000</td><td>Location</td></tr>
+                        <tr><td>003</td><td>Sole Agency 8</td><td>Type 8</td><td>Loc 8</td><td>8000</td><td>Location</td></tr>
+                        <tr><td>004</td><td>Sole Agency 8</td><td>Type 8</td><td>Loc 8</td><td>8000</td><td>Location</td></tr>
+                        <tr><td>005</td><td>Sole Agency 8</td><td>Type 8</td><td>Loc 8</td><td>8000</td><td>Location</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Dernière Vente</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ref</th>
+                            <th>Sole agency</th>
+                            <th>Type</th>
+                            <th>Localisation</th>
+                            <th>Prix</th>
+                            <th>Vente / Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>001</td><td>Sole Agency 7</td><td>Type 7</td><td>Loc 7</td><td>7000</td><td>Vente</td></tr>
+                        <tr><td>002</td><td>Sole Agency 8</td><td>Type 8</td><td>Loc 8</td><td>8000</td><td>Location</td></tr>
+                        <tr><td>003</td><td>Sole Agency 8</td><td>Type 8</td><td>Loc 8</td><td>8000</td><td>Location</td></tr>
+                        <tr><td>004</td><td>Sole Agency 8</td><td>Type 8</td><td>Loc 8</td><td>8000</td><td>Location</td></tr>
+                        <tr><td>005</td><td>Sole Agency 8</td><td>Type 8</td><td>Loc 8</td><td>8000</td><td>Location</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publications Planning -->
+    <div class="section">
+        <div class="title-container">
+            <h2>Publications Planning :</h2>
+            <div class="arrow">
+                <span>&lt;</span>
+                <span>&gt;</span>
+            </div>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="reference">12345</td>
+                        <td class="reference">67890</td>
+                        <td class="reference">54321</td>
+                        <td class="reference">11223</td>
+                        <td class="reference">44556</td>
+                        <td class="reference">78901</td>
+                        <td class="reference">23456</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-- Pied de page -->
+<footer>
+    <hr>
+    <p>Frank Salt 2025©</p>
+</footer>
+
+</body>
+</html>
